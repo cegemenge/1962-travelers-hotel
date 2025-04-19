@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking - 1962 Travelers Hotel</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>1962 Travelers Hotel</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="booking.html" class="active">Booking</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Book a Room</h2>
+        <p>Fill in your details to make a reservation with us.</p>
+    </section>
+
+    <section class="features">
+        <form style="max-width: 600px; margin: auto; width: 100%;">
+            <label for="name">Full Name</label><br />
+            <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin: 10px 0;"><br />
+
+            <label for="email">Email</label><br />
+            <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin: 10px 0;"><br />
+
+            <label for="room">Room Type</label><br />
+            <select id="room" name="room" required style="width: 100%; padding: 10px; margin: 10px 0;">
+                <option value="">-- Select Room Type --</option>
+                <option value="standard">Standard Room - ₦8,000</option>
+                <option value="deluxe">Deluxe Room - ₦12,000</option>
+                <option value="executive">Executive Suite - ₦18,000</option>
+            </select><br />
+
+            <label for="checkin">Check-in Date</label><br />
+            <input type="date" id="checkin" name="checkin" required style="width: 100%; padding: 10px; margin: 10px 0;"><br />
+
+            <label for="checkout">Check-out Date</label><br />
+            <input type="date" id="checkout" name="checkout" required style="width: 100%; padding: 10px; margin: 10px 0;"><br />
+
+            <label for="requests">Special Requests</label><br />
+            <textarea id="requests" name="requests" rows="4" style="width: 100%; padding: 10px; margin: 10px 0;"></textarea><br />
+
+            <button type="submit" class="btn">Submit Booking</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 1962 Travelers Hotel, Ijebu Ode. All rights reserved.</p>
+    </footer>
+</body>
+</html>
